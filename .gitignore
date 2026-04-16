@@ -1,0 +1,36 @@
+# 依赖目录（不需要下载，运行 npm install 自动安装）
+node_modules/
+
+# 构建产物（运行 npm run build 自动生成）
+dist/
+
+# 环境变量（包含敏感信息，不应该提交到版本控制）
+.env
+.env.local
+.env.*.local
+
+# SSL 私钥（包含敏感信息，不应该提交到版本控制）
+ssl/private.key
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# 编辑器临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 测试覆盖率
+coverage/
+*.lcov
+
+# TypeScript 编译输出
+*.tsbuildinfo
