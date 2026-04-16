@@ -2,7 +2,10 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 
-dotenv.config();
+// 加载 .env 文件，确保优先使用文件配置
+dotenv.config({
+  override: true // 强制覆盖系统环境变量
+});
 
 const JWT_SECRET = process.env.JWT_SECRET || 'default-secret-key-please-change-in-production';
 const USERNAME = process.env.USERNAME || 'admin';

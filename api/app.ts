@@ -20,7 +20,9 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // load env
-dotenv.config()
+dotenv.config({
+  override: true // 强制覆盖系统环境变量
+})
 
 // 配置项检查和默认值
 const requiredEnv = {

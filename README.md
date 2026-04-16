@@ -63,7 +63,7 @@ npm run dev
 # 首先构建前端
 npm run build
 
-# 启动HTTP服务器
+# 启动HTTP服务器（跨平台兼容）
 npm start
 
 # 启动HTTPS服务器（需要SSL证书）
